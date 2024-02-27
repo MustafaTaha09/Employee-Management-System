@@ -1,0 +1,22 @@
+SQL Query Task Complex Employee Management System:
+
+
+1) Select employees.id, employees.name, projects.name from employees emp join projects ep
+   on emp.id = ep.id group by emp.id 
+   having count(ep.id) >= 2;
+
+
+2) select position.name, avg(salary_rate) as avg_salary from Positions p join SalaryGrades s
+   on p.id = s.id group by position.name order by avg_salary;
+
+
+3) update Employees set salary = salary * 1.1 where employees.id in 
+   ( select employees.id from employees join projects on employees.id = projects.id
+     where projects.budget > 100000 );
+
+4) delete from employees where age > 40 AND employees.id not in ( select employees.id from
+   employees join projects on employees.id = projects.id );
+   
+
+
+
