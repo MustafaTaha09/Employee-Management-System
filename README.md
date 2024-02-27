@@ -1,2 +1,3 @@
 # Employee-Management-System
-An Employee Management System Assessment 
+## Notes
+The sql query task is a notepad file extension called "SQL Query Task Complex Employee Management System"
